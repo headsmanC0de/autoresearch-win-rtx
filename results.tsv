@@ -1,3 +1,4 @@
 commit	val_bpb	memory_gb	status	description
 5fbd1bc	0.811295	2.9	keep	baseline DEPTH=8 AR=64 dim=512 50.3M params
 6dacc89	0.659576	2.5	keep	shallow-wide DEPTH=4 AR=128 dim=512 29.4M params
+e72b354	0.718258	3.0	discard	mid DEPTH=6 AR=96 dim=640 55.7M params
