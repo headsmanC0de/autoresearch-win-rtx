@@ -796,7 +796,7 @@ class MuonAdamW(torch.optim.Optimizer):
 # ---------------------------------------------------------------------------
 
 # Model architecture
-ASPECT_RATIO = 64         # model_dim = depth * ASPECT_RATIO
+ASPECT_RATIO = 128        # model_dim = depth * ASPECT_RATIO
 HEAD_DIM = 128            # target head dimension for attention
 WINDOW_PATTERN = "SSSL"   # sliding window pattern: L=full, S=half context
 
@@ -813,7 +813,7 @@ WARMDOWN_RATIO = 0.5
 FINAL_LR_FRAC = 0.0
 
 # Model size + memory defaults
-DEPTH = 8
+DEPTH = 4
 DEVICE_BATCH_SIZE = 16
 EVAL_BATCH_SIZE = 8
 
