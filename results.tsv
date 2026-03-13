@@ -15,3 +15,5 @@ caffe15	0.515065	2.4	keep	embedding LR 0.6->1.2
 cf62a8b	0.512449	2.4	keep	warmdown ratio 0.5->0.7
 cb0661e	0.515447	2.4	discard	warmdown 0.9 too aggressive
 0e0c0cb	0.516443	2.4	discard	warmup 0.05 wastes steps
+e8e22df	0.505631	2.3	keep	MLP ratio 4x->3x faster steps
+eb6f884	0.508870	2.3	discard	MLP 2x too small capacity
