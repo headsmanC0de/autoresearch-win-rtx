@@ -12,3 +12,6 @@ e3336b4	0.559544	2.4	keep	double matrix LR 0.04->0.08 DEPTH=2
 029ffad	0.522085	2.4	discard	batch 2^16 too small (noisy gradients)
 caffe15	0.515065	2.4	keep	embedding LR 0.6->1.2
 676de97	0.515575	2.4	discard	weight decay 0.2->0.0 (no effect)
+cf62a8b	0.512449	2.4	keep	warmdown ratio 0.5->0.7
+cb0661e	0.515447	2.4	discard	warmdown 0.9 too aggressive
+0e0c0cb	0.516443	2.4	discard	warmup 0.05 wastes steps
