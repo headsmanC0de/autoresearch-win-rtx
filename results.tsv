@@ -7,3 +7,4 @@ e72b354	0.718258	3.0	discard	mid DEPTH=6 AR=96 dim=640 55.7M params
 e3336b4	0.559544	2.4	keep	double matrix LR 0.04->0.08 DEPTH=2
 1640882	0.558057	2.4	keep	matrix LR 0.12 DEPTH=2
 4db828f	0.561333	2.4	discard	matrix LR 0.16 too high
+8657ae9	0.528065	2.4	keep	halve batch 2^19->2^18 273 steps DEPTH=2 LR=0.12
