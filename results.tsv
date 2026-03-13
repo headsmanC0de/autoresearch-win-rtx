@@ -17,3 +17,4 @@ cb0661e	0.515447	2.4	discard	warmdown 0.9 too aggressive
 0e0c0cb	0.516443	2.4	discard	warmup 0.05 wastes steps
 e8e22df	0.505631	2.3	keep	MLP ratio 4x->3x faster steps
 eb6f884	0.508870	2.3	discard	MLP 2x too small capacity
+93f88d7	0.504298	2.3	keep	unembedding LR 0.004->0.008
