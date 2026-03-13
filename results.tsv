@@ -10,3 +10,5 @@ e3336b4	0.559544	2.4	keep	double matrix LR 0.04->0.08 DEPTH=2
 8657ae9	0.528065	2.4	keep	halve batch 2^19->2^18 273 steps DEPTH=2 LR=0.12
 5e51275	0.517234	2.4	keep	batch 2^17 534 steps DEPTH=2 LR=0.12
 029ffad	0.522085	2.4	discard	batch 2^16 too small (noisy gradients)
+caffe15	0.515065	2.4	keep	embedding LR 0.6->1.2
+676de97	0.515575	2.4	discard	weight decay 0.2->0.0 (no effect)
