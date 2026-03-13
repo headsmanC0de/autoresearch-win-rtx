@@ -4,3 +4,4 @@ commit	val_bpb	memory_gb	status	description
 e72b354	0.718258	3.0	discard	mid DEPTH=6 AR=96 dim=640 55.7M params
 85c22f2	0.567235	2.4	keep	ultra-shallow DEPTH=2 AR=256 dim=512 18.9M params
 7fec051	0.607743	2.3	discard	single-layer DEPTH=1 AR=512 dim=512 12.7M params
+e3336b4	0.559544	2.4	keep	double matrix LR 0.04->0.08 DEPTH=2
