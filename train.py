@@ -275,8 +275,8 @@ def detect_runtime():
     if hasattr(torch.backends, "cudnn"):
         torch.backends.cudnn.allow_tf32 = tf32_enabled
 
-    use_compile = False
-    print("torch.compile disabled in this fork runtime path.")
+    use_compile = True
+    print("torch.compile enabled.")
     attention_backend = "sdpa"
     print("Using PyTorch SDPA attention backend.")
     force_checkpointing = os.environ.get("AUTORESEARCH_FORCE_CHECKPOINTING")
@@ -304,11 +304,13 @@ def detect_runtime():
     )
 
 
-USE_COMPILE = False
+USE_COMPILE = True
 MUON_COMPUTE_DTYPE = torch.bfloat16
 
 
 def _maybe_compile(obj, **kwargs):
+    if USE_COMPILE:
+        return torch.compile(obj, **kwargs)
     return obj
 
 
@@ -1047,7 +1049,7 @@ def _configure_step_kernels(runtime):
         MUON_COMPUTE_DTYPE = torch.float32
         muon_reason = "fp16 AMP without bf16 support; using fp32 fallback"
     print(f"Muon compute dtype: {MUON_COMPUTE_DTYPE} ({muon_reason})")
-    USE_COMPILE = False
+    USE_COMPILE = runtime.use_compile
 
 
 def _run_training_once(runtime, tokenizer, config, device_batch_size, smoke_test):
